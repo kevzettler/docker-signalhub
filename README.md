@@ -19,7 +19,7 @@ docker run --name signalhub -p 8080:8080 -d emilbayes/signalhub:latest
 Use with `--cert` and `--key`:
 
 ```sh
-docker run --name signalhub -p 8080:8080 -v ./ssl:/etc/signalhub -d emilbayes/signalhub:latest signalhub list -p 8080 --cert /etc/signalhub/acme.cert --key /etc/signalhub/acme.pem
+docker run --name signalhub -p 8080:8080 -v ./ssl:/etc/signalhub -d emilbayes/signalhub:latest signalhub listen -p 8080 --cert /etc/signalhub/acme.cert --key /etc/signalhub/acme.pem
 ```
 
 ## License
