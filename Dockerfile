@@ -1,4 +1,4 @@
-FROM nodesource/xenial:6.3.1
+FROM node:9
 
 RUN npm install --global signalhub@4.8.0
 
